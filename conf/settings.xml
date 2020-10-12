@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+	http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<pluginGroups>
+		<pluginGroup>org.apache.portals.jetspeed-2</pluginGroup>
+	</pluginGroups>
+	<mirrors>
+		<mirror>
+		  <id>alimaven</id>
+		  <name>aliyun maven</name>
+		  <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+		  <mirrorOf>central</mirrorOf>       
+		</mirror>
+	</mirrors>
+	<profiles>
+		<profile>    
+			<id>jdk-11.0</id>    
+			<activation>    
+				<activeByDefault>true</activeByDefault>    
+				<jdk>11.0</jdk>    
+			</activation>    
+			<properties>    
+				<maven.compiler.source>11.0</maven.compiler.source>    
+				<maven.compiler.target>11.0</maven.compiler.target>    
+				<maven.compiler.compilerVersion>11.0</maven.compiler.compilerVersion>    
+			</properties>    
+		</profile> 
+	</profiles>
+</settings>
